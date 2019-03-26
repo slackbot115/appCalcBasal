@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="components/loader.js"></script>
+    <script src="components/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <script>
+    </script>
+</head>
+<body>
+  <div class="container">
+    <h2>DESCUBRA SEU <br> METABOLISMO BASAL</h2><br>
+
+    <form class="form-contact" tabindex="1">
+      <input type="text" class="form-contact-input" name="nome" placeholder="Seu nome" required />  
+      Qual seu sexo?<br>
+      <input type="radio" name="gender" value="homem" > Homem<br>
+      <input type="radio" name="gender" value="mulher"> Mulher<br><br>
+
+      <input type="number" class="form-contact-input" id="peso" placeholder="Seu peso em kg" />
+      <input type="number" class="form-contact-input" id="altura" placeholder="Sua altura em cm" />
+      <input type="number" class="form-contact-input" id="idade" placeholder="Sua idade" />
+
+      <center>
+      <select id="appearance-select" style="width: 75%">
+       <option value="1.2">Pouco ou nenhum exercício</option>
+       <option value="1.375">Segunda opção</option>
+       <option value="1.55">Terceira opção</option>
+       <option value="1.725">Quarta opção</option>
+       <option value="1.9">Quinta opção</option>
+      </select>
+      </center>
+
+      <center><button type="button" class="form-contact-button">Descobrir</button>
+      <label for="resposta">Resposta: </label>
+      <input type="text" name="resposta" id="res" disabled>
+      </center>
+    </form>
+  </div>
+  
+  <!--container-->
+
+</body>
+    <script src="components/acoes.js"></script>
+</html>
+
+<style> 
+body{
+background-image: linear-gradient(to right bottom, #1a50b5, #2359c2, #2b63d0, #336dde, #3a77ec, #2987f4, #1d96fa, #20a5ff, #3db9ff, #63ccff, #89defe, #b0eeff);
+}
+.container {
+  height: 620px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right top, #1a50b5, #2359c2, #2b63d0, #336dde, #3a77ec, #2987f4, #1d96fa, #20a5ff, #3db9ff, #63ccff, #89defe, #b0eeff);
+  //background-image: url(https://cdn4.iconfinder.com/data/icons/home-18/32/392-01-512.png);
+  color: white;
+  padding-left: 19px;
+}
+h2{
+  margin: 0 auto;
+  font-size: 2.2em;
+  text-align: center;
+  text-shadow: 2px 3px 0px #8ca4b7;
+  line-height: 1.2;
+  /* font: 32.8px 'Montserrat', sans-serif; */
+  font-weight: bold;
+  padding-top: 21px;
+}
+.form-contact {
+  width: 96%;
+  padding-left:10px;
+  
+}
+
+.form-contact-input {
+  width: 100%;
+  color: #7a8a92;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-button {
+  width: 57%;
+  font-size: 24px;
+  border-radius: 50px;
+  color: #fff;
+  height: 48px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #56c6f9;
+  display: block;
+  border: none;
+  transition: 1s;
+  border-radius: 50px;
+  -webkit-box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+  box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+  letter-spacing: 0.094em;
+  margin-top: 13px;
+}
+
+.form-contact-button:hover {
+  opacity: 2;
+}
+</style>
