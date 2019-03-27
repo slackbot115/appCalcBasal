@@ -1,5 +1,6 @@
+
 var radio = null;
-var taxa = null;
+var taxa = 1.2;
 var peso = $('#peso');
 var altura = $('#altura');
 var idade = $('#altura');
